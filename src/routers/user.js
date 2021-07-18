@@ -3,8 +3,7 @@ const User = require('../models/user')
 const auth = require('../middleware/auth')
 const multer=require('multer')
 const sharp=require('sharp')
-const {sendWelcomeEmail}=require('../emails/account')
-const {sendGoodByeEmail}=require('../emails/account')
+const { sendWelcomeEmail, sendGoodByeEmail } = require('../emails/account')
 const router = new express.Router()
 const upload=multer({
     limits:{
